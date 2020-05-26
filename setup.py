@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="stock-learning-rabbitmq",
-    version="0.0.3",
+    version="0.0.11",
     description="This is a package that includes all RabbitMQ handled messages by the stock-learning infrastructure",
     long_description=long_description,
     long_description_content_type="text/markdown",
