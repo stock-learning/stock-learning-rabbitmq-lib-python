@@ -1,3 +1,4 @@
+import traceback
 from ast import literal_eval
 from json import dumps, loads
 from threading import Thread
@@ -59,7 +60,7 @@ class RabbitMQServer(object):
             self._handle_message(message)
         except Exception as e:
             print(f'Cannot handle message. {message} {e}')
-            raise e
+            traceback.print_exc()
 
     def _binary_to_dict(self, binary_json):
         return literal_eval(binary_json.decode('utf-8'))
