@@ -13,4 +13,4 @@ class AnalyserStub(Stub):
         self._send('daily-prediction-closing-handler', {})
 
     def real_time_value_addition_handler(self, content):
-        self._send('real-time-value-addition-handler', {'stocks': content})
+        self._send('real-time-value-addition-handler', content)
