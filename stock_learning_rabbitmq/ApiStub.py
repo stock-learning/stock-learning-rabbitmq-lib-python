@@ -6,6 +6,9 @@ class ApiStub(Stub):
     def __init__(self, server):
         super().__init__(server, 'stock-learning-api')
 
+    def company_news(self, content):
+        self._send('company-news',  content)
+
     def infomoney_ibovespa_company_data(self, content):
         self._send('infomoney-ibovespa-company-data',  content)
 
