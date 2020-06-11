@@ -17,3 +17,9 @@ class ApiStub(Stub):
 
     def infomoney_ibovespa_live_update(self, content):
         self._send('infomoney-ibovespa-live-update', content)
+
+    def get_daily_companies(self):
+        self._send('get-daily-companies', {})
+
+    def get_all_companies(self):
+        self._send('get-all-companies', {})
