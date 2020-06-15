@@ -23,3 +23,6 @@ class ApiStub(Stub):
 
     def get_all_companies(self):
         self._send('get-all-companies', {})
+        
+    def live_prediction(self, content):
+        self._send('live-prediction', {})
