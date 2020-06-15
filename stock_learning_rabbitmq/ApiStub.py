@@ -26,3 +26,6 @@ class ApiStub(Stub):
         
     def live_prediction(self, content):
         self._send('live-prediction', content)
+        
+    def live_prediction_movement(self, content):
+        self._send('live-prediction-movement', content)
