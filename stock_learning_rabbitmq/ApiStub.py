@@ -25,4 +25,4 @@ class ApiStub(Stub):
         self._send('get-all-companies', {})
         
     def live_prediction(self, content):
-        self._send('live-prediction', {})
+        self._send('live-prediction', content)
