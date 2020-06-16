@@ -59,7 +59,7 @@ class RabbitMQServer(object):
             print(f'Message being handled. {message}')
             self._handle_message(message)
         except Exception as e:
-            print(f'Cannot handle message. {message} {e}')
+            print(f'Cannot handle message. {body} {e}')
             traceback.print_exc()
 
     def _binary_to_dict(self, binary_json):
