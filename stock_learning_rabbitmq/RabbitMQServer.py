@@ -56,7 +56,7 @@ class RabbitMQServer(object):
             message = self._binary_to_dict(body)
             if not (('primitive' in message and 'content' in message) and (isinstance(message['primitive'], str) and isinstance(message['content'], dict))):
                 raise Exception()
-            print(f'Message being handled. {message}')
+            print(f'Message being handled.')
             self._handle_message(message)
         except Exception as e:
             print(f'Cannot handle message. {body} {e}')
